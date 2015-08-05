@@ -19,7 +19,12 @@ namespace Extractor
             resp.Close();
             return sourceCode;
         }
-
+        /// <summary>
+        /// 
+        /// teste
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         public static Info getInfo(string url)
         {
             // The HtmlWeb class is a utility class to get the HTML over HTTP
