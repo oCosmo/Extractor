@@ -40,6 +40,7 @@
             this.textBoxH1 = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.scan = new System.Windows.Forms.Button();
+            this.txtTextoPuro = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -147,9 +148,19 @@
             this.scan.UseVisualStyleBackColor = true;
             this.scan.Click += new System.EventHandler(this.scan_Click);
             // 
+            // txtTextoPuro
+            // 
+            this.txtTextoPuro.Location = new System.Drawing.Point(93, 271);
+            this.txtTextoPuro.Multiline = true;
+            this.txtTextoPuro.Name = "txtTextoPuro";
+            this.txtTextoPuro.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtTextoPuro.Size = new System.Drawing.Size(409, 219);
+            this.txtTextoPuro.TabIndex = 12;
+            // 
             // TestForm
             // 
-            this.ClientSize = new System.Drawing.Size(597, 277);
+            this.ClientSize = new System.Drawing.Size(597, 502);
+            this.Controls.Add(this.txtTextoPuro);
             this.Controls.Add(this.scan);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.textBoxH1);
@@ -173,5 +184,6 @@
 
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button scan;
+        private System.Windows.Forms.TextBox txtTextoPuro;
     }
 }
