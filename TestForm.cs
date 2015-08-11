@@ -58,6 +58,11 @@ namespace Extractor
             this.txtResultado.Text += WorkerClass.getTags(document, "//h3");
             this.txtResultado.Text += WorkerClass.getTags(document, "//title");
             this.txtResultado.Text += WorkerClass.getTags(document, "//a");
+            this.txtResultado.Text += WorkerClass.getTags(document, "//img");
+
+            
+            HtmlToText convert = new HtmlToText();
+            txtTextoPuro.Text = convert.Convert(document.DocumentNode.OuterHtml);
         }
     }
 }
